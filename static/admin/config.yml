@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+
+media_folder: "images" # Folder where user uploaded files should go
+public_folder: "images"
+publish_mode: "editorial_workflow"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "content/blog" # The path to the folder where the documents are stored
+    filter: {field: "type", value: "blog"}
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "published", widget: "datetime", timeFormat: false, format: "YYYY-MM-DD" }
+      - { label: "Intro Blurb", name: "description", widget: "text" }
+      - { label: "Is Draft (Hide from index view)", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Image", name: "image", widget: "image", required: true }
+      - label: "Post Author"
+        name: "author"
+        widget: "select"
+        options: ["Dillon Kearns"]
+        required: false
+        default: "Dillon Kearns"
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Type",
+          name: "type",
+          widget: "hidden",
+          default: "blog"
+        }
+  - name: "page" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Page" # Used in the UI, ie.: "New Post"
+    folder: "content" # The path to the folder where the documents are stored
+    filter: {field: "type", value: "page"}
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Type",
+          name: "type",
+          widget: "hidden",
+          default: "blog"
+        }
