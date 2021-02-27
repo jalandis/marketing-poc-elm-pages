@@ -1,9 +1,8 @@
 ---
-title: elm-pages-starter - a simple blog starter
+title: Testing Elm Jamstack
 type: page
 ---
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dillonkearns/elm-pages-netlify-cms-starter&stack=cms)
-
 
 ☝️ Fork and deploy this site in one click! 📚
 
