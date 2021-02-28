@@ -1,0 +1,6 @@
+{
+    "elm.analyseEnabled": true,
+    "[elm]": {
+      "editor.formatOnSave": true
+    }
+  }

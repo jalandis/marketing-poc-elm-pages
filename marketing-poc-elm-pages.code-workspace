@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+		  "elm-stuff": true
+		},
+		"elm.useWorkSpaceRootForElmRoot": true,
+		"elm.elmTestFileMatcher": "Test.elm",
+		"elm.analyseEnabled": true
+	}
+}

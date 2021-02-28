@@ -8,7 +8,7 @@
     "dependencies": {
         "direct": {
             "avh4/elm-color": "1.0.0",
-            "dillonkearns/elm-pages": "4.0.0",
+            "dillonkearns/elm-pages": "7.0.0",
             "dillonkearns/elm-rss": "1.0.0",
             "dillonkearns/elm-sitemap": "1.0.0",
             "elm/browser": "1.0.2",
@@ -29,10 +29,13 @@
             "mdgriffith/elm-markup": "3.0.1",
             "mdgriffith/elm-ui": "1.1.5",
             "noahzgordon/elm-color-extra": "1.0.2",
-            "rtfeldman/elm-hex": "1.0.0"
+            "rtfeldman/elm-hex": "1.0.0",
+            "zwilias/json-decode-exploration": "6.0.0"
         },
         "indirect": {
+            "ThinkAlexandria/elm-html-in-elm": "1.0.1",
             "billstclair/elm-xml-eeue56": "1.0.1",
+            "danyx23/elm-mimetype": "4.0.1",
             "dmy/elm-imf-date-time": "1.0.1",
             "elm/bytes": "1.0.8",
             "elm/file": "1.0.5",
@@ -46,8 +49,7 @@
             "mgold/elm-nonempty-list": "4.1.0",
             "miniBill/elm-codec": "1.2.0",
             "ryannhg/date-format": "2.3.0",
-            "tripokey/elm-fuzzy": "5.2.1",
-            "zwilias/json-decode-exploration": "6.0.0"
+            "tripokey/elm-fuzzy": "5.2.1"
         }
     },
     "test-dependencies": {
